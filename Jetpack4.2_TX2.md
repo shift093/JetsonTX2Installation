@@ -1,6 +1,6 @@
 ### 安裝指南
 
-#### 準備
+# 準備
 
 兩台PC(ubuntu16.04+window8.1)
 一台TX2
@@ -9,7 +9,7 @@
 兩條網路線(TX2、主機需要同一個網域底下)
 
 
-#### 步驟一
+# 步驟一
 
 下載jetpack到主機(ubuntu16.04)
 https://developer.nvidia.com/embedded/downloads
@@ -20,7 +20,7 @@ sudo apt update
 sudo apt grade
 ```
 
-#### 步驟二
+# 步驟二
 
 ```
 # 先在主機安裝sdk manager
@@ -31,7 +31,7 @@ sudo apt install ./skdmanager...(tab)
 skdmanager
 ```
 
-#### 步驟三
+# 步驟三
 
 登入後
 
@@ -59,7 +59,7 @@ tx2:設定帳號密碼等等...結束後
 
 註：主機有安裝opencv會衝突，導致TX2安裝過程computer vision會Error
 
-#### 步驟四
+# 步驟四
 
 在TX2設定VNC 的 server, nvidia官方用`vino`
 
