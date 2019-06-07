@@ -74,13 +74,17 @@ tx2:設定帳號密碼等等...結束後
       gsettings set org.gnome.Vino prompt-enabled false
       gsettings set org.gnome.Vino require-encryption false
       /usr/lib/vino/vino-server
+      
       # 沒辦法work?錯誤？
       ps aux | grep X
       DISPLAY=:1 /usr/lib/vino/vino-server
+      
       # 錯誤？ Vino' does not contain a key named 'enable'?
       sudo vi /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml
+      
       # 編輯 
       sudo nano /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml
+      
       # 在key那層插入
       <key name='enabled' type='b'>
          <summary>Enable remote access to the desktop</summary>
@@ -91,6 +95,13 @@ tx2:設定帳號密碼等等...結束後
          </description>
          <default>false</default>
       </key>
+      #再試一試
+      export DISPLAY=:1
+      gsettings set org.gnome.Vino enabled true
+      gsettings set org.gnome.Vino prompt-enabled false
+      gsettings set org.gnome.Vino require-encryption false
+      /usr/lib/vino/vino-server
+      ## 完成
       ```
       
    * 左上搜尋 desktop sharing
