@@ -51,13 +51,11 @@ tx2:設定帳號密碼等等...結束後
 #### 步驟四
 
 設定VNC 的 server, nvidia官方用`vino`
-```
 # 安裝常用套件
-sudo apt install ssh vino 
+`sudo apt install ssh vino`
 
 # 設定VNC 桌面遠端(desktop sharing) -> 
   * 預設為disable所以需要再設定
     * 
-    ![image](https://github.com/shift093/JetsonTX2NeedInstall/blob/master/jetson_setup.png)
-```
+    * ![image](https://github.com/shift093/JetsonTX2NeedInstall/blob/master/jetson_setup.png)
 
