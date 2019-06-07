@@ -95,16 +95,18 @@ tx2:設定帳號密碼等等...結束後
          </description>
          <default>false</default>
       </key>
-      #再試一試
-      export DISPLAY=:1
-      gsettings set org.gnome.Vino enabled true
-      gsettings set org.gnome.Vino prompt-enabled false
-      gsettings set org.gnome.Vino require-encryption false
-      /usr/lib/vino/vino-server
-      ## 完成
       ```
       
    * 左上搜尋 desktop sharing
    
       ![image](https://github.com/shift093/JetsonTX2NeedInstall/blob/master/jetson_setup.png)
+
+# 再試一試
+      export DISPLAY=:1
+      gsettings set org.gnome.Vino enabled true
+      gsettings set org.gnome.Vino prompt-enabled false
+      gsettings set org.gnome.Vino require-encryption false
+      /usr/lib/vino/vino-server
+      
+# 完成
 
