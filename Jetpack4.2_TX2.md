@@ -82,7 +82,7 @@ tx2:設定帳號密碼等等...結束後
       # 編輯 
       sudo nano /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml
       # 在key那層插入
-      <key name=’enabled’ type=’b’>
+      <key name='enabled' type='b'>
          <summary>Enable remote access to the desktop</summary>
          <description>
          If true, allows remote access to the desktop via the RFB
