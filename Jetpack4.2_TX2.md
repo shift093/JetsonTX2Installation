@@ -100,6 +100,7 @@ tx2:設定帳號密碼等等...結束後
    * 左上搜尋 desktop sharing
    
       ![image](https://github.com/shift093/JetsonTX2NeedInstall/blob/master/jetson_setup.png)
+      ![image](jetson_setup.png)
 
 # 再試一試
       export DISPLAY=:1
