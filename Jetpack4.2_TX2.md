@@ -66,6 +66,34 @@ tx2:設定帳號密碼等等...結束後
 
 在TX2設定VNC 的 server, nvidia官方用`vino`
 
+# 步驟五
+
+creating-a-swap-file
+      
+      1. - $ df -h 
+      這將顯示您的文件系統以及剩餘的空間。
+      
+      2. - $ sudo fallocate -l 8.0G / swapfile 
+      創建一個8 GB的交換
+      
+      3. - $ sudo chmod 600 / swapfile 
+      更改文件權限
+      
+      4. - $ sudo mkswap / swapfile 
+      
+      5. - $ sudo swapon / swapfile 
+      
+      6. - $免費-m
+      這將顯示交換文件已打開。您也可以拔出系統監視器
+      但是這只是暫時的。如果重新啟動，交換文件就會消失。 
+      
+      7. - $ sudo nano / etc / fstab 
+      
+      8.在此文件中添加“/ swapfile none swap 0 0”行。不要包括引號。
+      退出並保存文件
+      
+      9.現在您可以重新啟動並激活您的交換。 
+      
 # 安裝常用套件
 `sudo apt install ssh vino`
 
