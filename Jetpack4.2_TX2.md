@@ -5,12 +5,13 @@ https://www.jetsonhacks.com/2019/07/22/jetpack-4-2-1-release/
 
 # 準備
 
+```
 * 兩台PC(ubuntu16.04+window8.1)
 * 一台TX2
 * 一台螢幕支援hdmi
 * 一台自動DHCP分享器
 * 兩條網路線(TX2、主機需要同一個網域底下)
-
+```
 
 # 步驟一
 
@@ -36,6 +37,7 @@ skdmanager
 
 # 步驟三
 
+```
 登入後
 
 a. 選擇 tx2就好 主機(HOST)不用
@@ -61,6 +63,7 @@ tx2:設定帳號密碼等等...結束後
 取得ip後到主機這邊輸入ip及帳密，開始安裝SDK
 
 註：主機有安裝opencv會衝突，導致TX2安裝過程computer vision會Error
+```
 
 # 步驟四
 
