@@ -1,5 +1,8 @@
 ### 安裝指南
 
+新增版本
+https://www.jetsonhacks.com/2019/07/22/jetpack-4-2-1-release/
+
 # 準備
 
 * 兩台PC(ubuntu16.04+window8.1)
