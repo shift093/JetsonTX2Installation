@@ -35,7 +35,7 @@ skdmanager
 
 登入後
 
-a. 選擇 host+tx2
+a. 選擇 tx2就好 主機(HOST)不用
 
 b. 打勾,同意
 
