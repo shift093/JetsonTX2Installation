@@ -111,3 +111,8 @@ tx2:設定帳號密碼等等...結束後
       
 # 完成
 
+# 安裝tensorflow
+      sudo apt install python3-pip 
+      sudo apt install libhdf5-serial-dev hdf5-tools
+      pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.13.1+nv19.X --user
+
