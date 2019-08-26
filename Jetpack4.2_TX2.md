@@ -1,4 +1,4 @@
-### 安裝指南
+# 安裝指南
 
 新增版本
 https://www.jetsonhacks.com/2019/07/22/jetpack-4-2-1-release/
@@ -10,18 +10,17 @@ https://www.jetsonhacks.com/2019/07/22/jetpack-4-2-1-release/
 * 一台TX2
 * 一台螢幕支援hdmi
 * 一台自動DHCP分享器
-* 兩條網路線(TX2、主機需要同一個網域底下)
+* 至少一條網路線(TX2、主機需要同一個網域底下,無線就只需要一條把TX2跟主機串起來)
 ```
 
 # 步驟一
 
-下載jetpack到主機(ubuntu16.04)
-https://developer.nvidia.com/embedded/downloads
 
-apt更新
+[https://developer.nvidia.com/embedded/downloads](https://developer.nvidia.com/embedded/downloads)
 ```
+# 下載jetpack到主機(ubuntu16.04)
 sudo apt update
-sudo apt grade
+sudo apt upgrade
 ```
 
 # 步驟二
@@ -31,7 +30,7 @@ sudo apt grade
 cd Dowloads
 ls ./sdk...(tab)
 sudo apt install ./skdmanager...(tab)
-# run
+# run sdk manger
 skdmanager
 ```
 
@@ -54,22 +53,33 @@ c. 等待安裝,flash(~ Insatalling... 50%)
   
 d. 主機:用其他電腦VNC遠端控制主機(只有一個螢幕的方法)
 
-螢幕接TX2(這時候已經安裝好TX2的OS了，會有畫面)
+# 螢幕接TX2(這時候已經安裝好TX2的OS了，會有畫面)
 
-tx2:設定帳號密碼等等...結束後
+# tx2:設定帳號密碼等等...
 
-登入TX2`ifconfig -e`查TX2虛擬IP(待會要在主機那邊登入TX2，以便安裝SDK檔案)
+# 登入後一樣打開terminal,先更新(順便確認連到網路且正常)
 
-取得ip後到主機這邊輸入ip及帳密，開始安裝SDK
+sudo apt update
+sudo apt upgrade
 
-註：主機有安裝opencv會衝突，導致TX2安裝過程computer vision會Error
+#更新完
+
+# 主機這邊輸入及帳密，開始安裝SDK(這個過程可以不用連到網路)
+OS
+TensorRT
+cuDNN
+VisionWorks
+CUDA 10.0
+Multimedia API
+OpenCV...
+
+安裝完就可以直接操作tx2
 ```
 
+###### 註記:一般建議
+
+
 # 步驟四
-
-在TX2設定VNC 的 server, nvidia官方用`vino`
-
-# 步驟五
 
 creating-a-swap-file
       
@@ -96,6 +106,9 @@ creating-a-swap-file
       退出並保存文件
       
       現在您可以重新啟動並激活您的交換。 
+# 步驟五
+
+在TX2設定VNC 的 server, nvidia官方用`vino`
       
 # 安裝常用套件
 `sudo apt install ssh vino`
@@ -149,4 +162,4 @@ creating-a-swap-file
       sudo apt install python3-pip 
       sudo apt install libhdf5-serial-dev hdf5-tools
       pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.13.1+nv19.X --user
-
+      # pip 安裝都要加上`--user`
